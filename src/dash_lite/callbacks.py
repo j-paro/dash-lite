@@ -1,5 +1,5 @@
-from dash import Dash, Input, Output, ctx
 import dash_mantine_components as dmc
+from dash import Dash, Input, Output, ctx
 
 
 def _build_greeting(style: str, name: str) -> str:

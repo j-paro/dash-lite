@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import os
-from dash import Dash, Input, Output, clientside_callback
-import dash_mantine_components as dmc
 
-from .layout import create_layout
+import dash_mantine_components as dmc
+from dash import Dash, Input, Output, clientside_callback
+
 from .callbacks import register_callbacks
+from .layout import create_layout
 
 
 def create_app() -> Dash:
