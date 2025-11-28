@@ -171,15 +171,6 @@ The included demo app showcases:
 4. **Theme Switching** - Persistent dark/light mode toggle
 5. **Responsive Layout** - Container-based structure
 
-## Deprecated Implementations
-
-The `deprecated/` folder contains two earlier implementations kept for reference:
-
-- **`original/`** - Vanilla Dash with custom CSS (port 8050)
-- **`using_tailwind/`** - Tailwind CSS via CDN (port 8051)
-
-These are **not maintained** and may have outdated patterns. Refer to them only for architectural comparison.
-
 ## Philosophy
 
 **dash-lite** prioritizes:
@@ -201,5 +192,3 @@ MIT
 ## Contributing
 
 This is a starter template. Fork it and make it your own!
-
-For AI coding assistants working on this project, see `.github/copilot-instructions.md` for architecture guidelines and patterns.
