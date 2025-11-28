@@ -7,11 +7,11 @@ import dash_mantine_components as dmc
 from dash_lite.layout import create_layout
 
 
-def test_create_layout_returns_container() -> None:
-    """Test that create_layout returns a Container component."""
+def test_create_layout_returns_appshell() -> None:
+    """Test that create_layout returns an AppShell component."""
     layout = create_layout()
 
-    assert isinstance(layout, dmc.Container)
+    assert isinstance(layout, dmc.AppShell)
 
 
 def test_layout_has_required_components() -> None:
@@ -43,6 +43,8 @@ def test_layout_has_required_components() -> None:
     assert find_component_by_id(layout, "name-input")
     assert find_component_by_id(layout, "greeting-output")
     assert find_component_by_id(layout, "color-scheme-switch")
+    assert find_component_by_id(layout, "burger-button")
+    assert find_component_by_id(layout, "app-shell")
 
 
 def test_layout_greeting_style_has_correct_options() -> None:

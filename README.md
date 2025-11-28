@@ -142,6 +142,14 @@ This project follows:
 - **Type hints** on all functions
 - **Modern Dash patterns** (see `.github/instructions/python.instructions.md`)
 
+### Testing
+
+See [tests/README.md](tests/TESTING.md) for information on running tests and test coverage.
+
+### Development Tools
+
+See [TOOLS.md](TOOLS.md) for available development tools and utilities
+
 ### DMC Conventions
 
 When working with Dash Mantine Components:

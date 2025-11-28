@@ -55,8 +55,8 @@ def test_register_callbacks_adds_callbacks_to_app() -> None:
 
     register_callbacks(app)
 
-    # Should have at least one callback registered
-    assert len(app.callback_map) > initial_count
+    # Should have two callbacks registered (greeting + navbar toggle)
+    assert len(app.callback_map) == initial_count + 2
 
 
 def test_greeting_callback_is_registered(dash_app: Dash) -> None:
@@ -68,3 +68,19 @@ def test_greeting_callback_is_registered(dash_app: Dash) -> None:
     assert len(callback["inputs"]) == 2
     assert callback["inputs"][0]["id"] == "greeting-style"
     assert callback["inputs"][1]["id"] == "name-input"
+
+
+def test_navbar_toggle_callback_is_registered(dash_app: Dash) -> None:
+    """Test that the navbar toggle callback is properly registered."""
+    # Multi-output callbacks use ".." to join output IDs
+    callback_id = "..burger-button.opened...app-shell.navbar.."
+    callback = dash_app.callback_map.get(callback_id)
+
+    assert callback is not None
+    assert len(callback["inputs"]) == 1
+    assert callback["inputs"][0]["id"] == "burger-button"
+    assert callback["inputs"][0]["property"] == "n_clicks"
+    # Check for state
+    assert len(callback["state"]) == 1
+    assert callback["state"][0]["id"] == "app-shell"
+    assert callback["state"][0]["property"] == "navbar"
