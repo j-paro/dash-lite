@@ -157,8 +157,5 @@ Thumbs.db
 # Project specific
 *.db
 
-# LLM Instructions
-.github
-
 # Unused Code
 deprecated/

@@ -18,18 +18,22 @@ This project has consolidated to focus on the DMC implementation as the primary,
 - 📦 **Type-Safe** with full type hints
 - 🚀 **Production-Ready** with environment variable configuration
 
+## Preview
+
+![Screenshot of dash-lite demo app](documentation/demo.png)
+
 ## Quick Start
 
 ### Prerequisites
 
-- Python >= 3.13
+- Python >= 3.10
 - Poetry (recommended) or pip
 
 ### Installation
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/dash-lite.git
+git clone https://github.com/j-paro/dash-lite.git
 cd dash-lite
 
 # Install dependencies with Poetry
@@ -144,11 +148,11 @@ This project follows:
 
 ### Testing
 
-See [tests/README.md](tests/TESTING.md) for information on running tests and test coverage.
+See [TESTING.md](documentation/TESTING.md) for information on running tests and test coverage.
 
 ### Development Tools
 
-See [TOOLS.md](TOOLS.md) for available development tools and utilities
+See [TOOLS.md](documentation/TOOLS.md) for available development tools and utilities
 
 ### DMC Conventions
 
