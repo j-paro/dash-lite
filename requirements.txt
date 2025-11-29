@@ -1,0 +1,7 @@
+# Generated from pyproject.toml for deployment
+# Run: poetry export -f requirements.txt --output requirements.txt --without-hashes
+
+dash>=3.3.0,<4.0.0
+dash-mantine-components>=2.4.0,<3.0.0
+dash-iconify>=0.1.2,<0.2.0
+gunicorn>=21.0.0

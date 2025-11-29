@@ -189,6 +189,10 @@ This is **not**:
 - ❌ An opinionated state management system
 - ❌ A component showcase (see Mantine docs for that)
 
+## Deployment
+
+Want to share your app with the world? See **[PYTHONANYWHERE.md](PYTHONANYWHERE.md)** for instructions on deploying to PythonAnywhere's free tier.
+
 ## License
 
 MIT

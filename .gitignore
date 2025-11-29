@@ -159,3 +159,6 @@ Thumbs.db
 
 # Unused Code
 deprecated/
+
+# PythonAnywhere temporary files
+pythonanywhere_config.json
